@@ -34,7 +34,8 @@ h2 {
   font-weight: 700;
 }
 
-.box {
+.bill {
+  border: none;
   width: 100%;
   height: 48px;
   background-color: #f3f9fa;
@@ -43,15 +44,12 @@ h2 {
   background-image: url(./resorces/./$.svg);
   background-repeat: no-repeat;
   background-position: 5% 50%;
-  padding-top: 5px;
-  margin-bottom: 32px;
-}
 
-.bill {
-  margin-right: 17px;
-  color: #00474b;
+  margin-bottom: 32px;
   text-align: right;
   font-size: 24px;
+  color: #00474b;
+  padding-right: 17px;
 }
 
 .boxes button {
@@ -73,20 +71,29 @@ h2 {
 }
 
 .boxes .Custom {
+  width: 118px;
+  height: 48px;
   background-color: #f3f9fa;
-  color: #547878;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  text-align: right;
+  padding-right: 15px;
 }
 
-.people {
+.People {
   width: 100%;
   height: 48px;
+  border: none;
+  text-align: right;
+  font-size: 24px;
+  padding-right: 17px;
   background-color: #f3f9fa;
   border-radius: 5px;
   margin-top: 6px;
   background-image: url(./resorces/./person.svg);
   background-repeat: no-repeat;
   background-position: 5% 50%;
-  padding-top: 5px;
   margin-bottom: 32px;
 }
 
@@ -142,4 +149,76 @@ h6 {
 }
 
 @media screen and (min-width: 1400px) {
+  body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  .splitter {
+    margin-top: 163px;
+    margin-bottom: 88px;
+  }
+
+  .container {
+    width: 920px;
+    height: 481px;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    padding-left: 48px;
+    box-shadow: 0px 32px 43px 0px rgba(79, 166, 175, 0.2);
+  }
+
+  .result {
+    width: 413px;
+    height: 417px;
+    padding: 40px 40px 40px 40px;
+  }
+
+  h2 {
+    margin-top: 13px;
+  }
+
+  .box:hover {
+    border: 2px solid #26c2ae;
+  }
+
+  .boxes button {
+    width: 117px;
+    height: 48px;
+  }
+
+  .boxes button:hover {
+    background-color: #9fe8df;
+    color: #00474b;
+    transition: 0.1s;
+    cursor: pointer;
+  }
+
+  .boxes {
+    grid-template-columns: auto auto auto;
+  }
+
+  h6 {
+    font-size: 48px;
+  }
+
+  h4 {
+    margin-top: 20px;
+  }
+
+  .result button {
+    margin-top: 122px;
+    background-color: #0d686d;
+    color: #00474b;
+  }
+
+  .result button:hover {
+    background-color: #9fe8df;
+    transition: 0.1s;
+    cursor: pointer;
+  }
 }
